@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJE ÖDEVİ - Taş Kağıt Makas Oyunu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align:center;"> Taş-Kağıt-Makas Oyunu </h1>
+
+    <!-- Oyun kutusu -->
+    <div class="game-container">
+        <p class="giriş">Hayata biraz eğlence katmak için biraz eğlenmek ister misin?😁</p>
+        <!-- Hamleleri daire içinde göster -->
+        <div class="choices-display">
+            <div>
+                <div id="user-choice" class="choice-circle"></div>
+            </div>
+            <div>
+                <div id="computer-choice" class="choice-circle"></div>
+            </div>
+        </div>
+
+        <!-- Mesaj ve Başlat Butonu -->
+        <p id="message"> Oyuna başlamak için butona tıklayın! 😜 </p>
+        <button id="starts">Oyuna Başla</button>
+
+        <!-- Seçim butonları -->
+        <div id="buttons" style="display:none;">
+            <button id="tas" class="choice-btn">
+                <img src="görseller/tas.svg" alt="Taş" width="80">
+            </button>
+            <button id="kagit" class="choice-btn">
+                <img src="görseller/kagit.svg" alt="Kağıt" width="80">
+            </button>
+            <button id="makas" class="choice-btn">
+                <img src="görseller/makas.svg" alt="Makas" width="80">
+            </button>
+        </div>
+
+        <!-- Sonuç ve Skor -->
+        <p id="result"></p>
+        <p id="score"></p>
+    </div>
+
+    <!-- JavaScript dosyası -->
+    <script src="tasarım.js"></script>
+    <footer>Made by Gonca Yavuz</footer>
+</body>
+</html>
